@@ -14,9 +14,11 @@ class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int wybor;
-    System.out.println("1-wprowadz nowego studenta");
+    System.out.println(" 0- zakonczenie programu, 1-wprowadz nowego studenta, 2-wyipsac wszystkich studentów");
     wybor = scan.nextInt();
     switch (wybor) {
+      case 0:
+        System.exit(0);
       case 1:
   
         System.out.println("Podaj imię: ");
@@ -27,6 +29,16 @@ class Main {
           Service s = new Service();
           s.addStudent(new Student(name, age));
          
+          var students = s.getStudents();
+          for (Student current : students) {
+            System.out.println(current.ToString());
+          }
+        } catch (IOException e) {
+
+        }
+      case 2:
+        try {
+          Service s = new Service();
           var students = s.getStudents();
           for (Student current : students) {
             System.out.println(current.ToString());

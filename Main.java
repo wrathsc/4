@@ -18,7 +18,7 @@ class Main {
     wybor = scan.nextInt();
     switch (wybor) {
       case 1:
-
+  
         System.out.println("Podaj imię: ");
         String name = scan.next();
         System.out.println("Podaj wiek: ");

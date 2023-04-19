@@ -23,11 +23,13 @@ class Main {
   
         System.out.println("Podaj imię: ");
         String name = scan.next();
+         System.out.println("Podaj nazwisko: ");
+        String secondname = scan.next();
         System.out.println("Podaj wiek: ");
         int age = scan.nextInt();
         try {
           Service s = new Service();
-          s.addStudent(new Student(name, age));
+          s.addStudent(new Student(name, secondname, age ));
          
           var students = s.getStudents();
           for (Student current : students) {

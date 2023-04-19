@@ -1,9 +1,1 @@
-Krzysztof 20
-Janusz 40
-Krzysztof 20
-Janusz 40
-Jacek 39
-Krzysztof 20
-Janusz 40
-Franek 27
-Marek 23
+Jacek CIA 23

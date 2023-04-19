@@ -26,7 +26,7 @@ class Main {
         try {
           Service s = new Service();
           s.addStudent(new Student(name, age));
-
+         
           var students = s.getStudents();
           for (Student current : students) {
             System.out.println(current.ToString());

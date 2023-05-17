@@ -25,11 +25,13 @@ class Main {
         String name = scan.next();
          System.out.println("Podaj nazwisko: ");
         String secondname = scan.next();
+        System.out.println("Wprowadz datę urodzenia (w formacie dd-mm-yyyy): ");
+        String dataUrodzenia = scan.next();
         System.out.println("Podaj wiek: ");
         int age = scan.nextInt();
         try {
           Service s = new Service();
-          s.addStudent(new Student(name, secondname, age ));
+          s.addStudent(new Student(name, secondname, dataUrodzenia, age ));
          
           var students = s.getStudents();
           for (Student current : students) {
@@ -48,6 +50,7 @@ class Main {
         } catch (IOException e) {
 
         }
+        
     }
   }
 }
